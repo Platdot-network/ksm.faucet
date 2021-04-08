@@ -56,6 +56,7 @@ bot.on('Room.timeline', async (event, room) => {
       pdKeyring.decodeAddress(arg0, true, 2);
     } catch (e) {
       sendMessage(roomId, `${sender} provided an incompatible address.`);
+      sendMessage(roomId, `Please provid a kusama address!`);
       return;
     }
 

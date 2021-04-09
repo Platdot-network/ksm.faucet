@@ -11,7 +11,6 @@ const bot = mSDK.createClient({
 
 let ax = axios.create({
   baseURL: "http://localhost:5555",
-  timeout: 10000,
 });
 
 const sendMessage = (roomId, msg) => {
@@ -53,10 +52,9 @@ bot.on('Room.timeline', async (event, room) => {
 
   if (action === '!drip') {
     try {
-      pdKeyring.decodeAddress(arg0, true, 2);
+      pdKeyring.decodeAddress(arg0);
     } catch (e) {
       sendMessage(roomId, `${sender} provided an incompatible address.`);
-      sendMessage(roomId, `Please provid a kusama address!`);
       return;
     }
 

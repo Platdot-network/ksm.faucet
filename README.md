@@ -1,5 +1,5 @@
 # Kusama Faucet 
-This faucet is only used for the kusama testnet of the platdot project. I mainly updated some old APIs to make it work on kusama.But in fact, it can be used on all substrate-based chains.Therefore, if you want, you can also run a faucet yourself.
+This faucet is only used for the kusama testnet of the polkatdot project. I mainly updated some old APIs to make it work on kusama.But in fact, it can be used on all substrate-based chains.Therefore, if you want, you can also run a faucet yourself.
 # Get testnet KSM
 You can obtain KSM on our testnet by posting `!drip <KUSAMA_ADDRESS>` in the Matrix chatroom [#platdot-faucet:matrix.org](https://matrix.to/#/#platdot-faucet:matrix.org?via=matrix.org).
 # Deploy your own faucet
